@@ -10,32 +10,58 @@
 <body class="bg-slate-900 text-gray-200 font-sans">
 
 <!-- NAVBAR -->
-<nav class="fixed w-full bg-slate-900/80 backdrop-blur border-b border-slate-800 z-50">
-  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-    <div class="text-xl font-bold text-blue-500">Voltika Labs</div>
-    <div class="space-x-6 text-sm">
+<nav class="fixed w-full bg-slate-900/90 backdrop-blur border-b border-slate-800 z-50">
+  <div class="max-w-6xl mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
+    
+    <div class="text-lg md:text-xl font-bold text-blue-500">
+      Voltika Labs
+    </div>
+
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex space-x-6 text-sm">
       <a href="#services" class="hover:text-blue-400">Services</a>
       <a href="#hardware" class="hover:text-blue-400">Hardware</a>
       <a href="#about" class="hover:text-blue-400">About</a>
       <a href="#contact" class="hover:text-blue-400">Contact</a>
     </div>
+
+    <!-- Mobile Menu Button -->
+    <button id="menuBtn" class="md:hidden text-gray-300 focus:outline-none">
+      ☰
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden px-4 pb-4 space-y-3 text-sm">
+    <a href="#services" class="block hover:text-blue-400">Services</a>
+    <a href="#hardware" class="block hover:text-blue-400">Hardware</a>
+    <a href="#about" class="block hover:text-blue-400">About</a>
+    <a href="#contact" class="block hover:text-blue-400">Contact</a>
   </div>
 </nav>
 
 <!-- HERO -->
 <section class="min-h-screen flex items-center pt-24">
-  <div class="max-w-6xl mx-auto px-6">
-    <h1 class="text-4xl md:text-6xl font-bold leading-tight">
-      Engineering Reliable <span class="text-blue-500">Embedded Systems</span> for Industry
+  <div class="max-w-6xl mx-auto px-4 md:px-6">
+    <h1 class="text-3xl md:text-6xl font-bold leading-tight">
+      Engineering Reliable 
+      <span class="text-blue-500">Embedded Systems</span> 
+      for Industry
     </h1>
-    <p class="mt-6 text-lg text-gray-400 max-w-2xl">
-      Embedded firmware, industrial electronics, and field-ready hardware designed for harsh environments and real-world deployment.
+
+    <p class="mt-6 text-base md:text-lg text-gray-400 max-w-2xl">
+      Embedded firmware, industrial electronics, and field-ready hardware designed 
+      for harsh environments and real-world deployment.
     </p>
-    <div class="mt-8 space-x-4">
-      <a href="#contact" class="bg-blue-600 px-6 py-3 rounded-lg hover:bg-blue-500">
+
+    <div class="mt-8 flex flex-col sm:flex-row gap-4">
+      <a href="#contact" 
+         class="bg-blue-600 px-6 py-3 rounded-lg hover:bg-blue-500 text-center">
         Discuss Your Project
       </a>
-      <a href="#services" class="border border-slate-700 px-6 py-3 rounded-lg hover:border-blue-500">
+
+      <a href="#services" 
+         class="border border-slate-700 px-6 py-3 rounded-lg hover:border-blue-500 text-center">
         View Services
       </a>
     </div>
@@ -43,110 +69,86 @@
 </section>
 
 <!-- SERVICES -->
-<section id="services" class="py-24 border-t border-slate-800">
-  <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl font-bold mb-12">Engineering Services</h2>
+<section id="services" class="py-20 md:py-24 border-t border-slate-800">
+  <div class="max-w-6xl mx-auto px-4 md:px-6">
+    <h2 class="text-2xl md:text-3xl font-bold mb-12">Engineering Services</h2>
+
     <div class="grid md:grid-cols-2 gap-10">
 
       <div>
-        <h3 class="text-xl font-semibold text-blue-400">Embedded Firmware Development</h3>
-        <p class="mt-3 text-gray-400">Microcontroller-based system design for industrial and IoT applications.</p>
+        <h3 class="text-lg md:text-xl font-semibold text-blue-400">
+          Embedded Firmware Development
+        </h3>
+        <p class="mt-3 text-gray-400">
+          Microcontroller-based system design for industrial and IoT applications.
+        </p>
       </div>
 
       <div>
-        <h3 class="text-xl font-semibold text-blue-400">PCB & Electronics Design</h3>
-        <p class="mt-3 text-gray-400">Schematic and PCB layout engineered for manufacturability and reliability.</p>
+        <h3 class="text-lg md:text-xl font-semibold text-blue-400">
+          PCB & Electronics Design
+        </h3>
+        <p class="mt-3 text-gray-400">
+          Schematic and PCB layout engineered for manufacturability and reliability.
+        </p>
       </div>
 
       <div>
-        <h3 class="text-xl font-semibold text-blue-400">Manufacturing Support</h3>
-        <p class="mt-3 text-gray-400">PCB fabrication and PCBA coordination with quality validation.</p>
+        <h3 class="text-lg md:text-xl font-semibold text-blue-400">
+          Manufacturing Support
+        </h3>
+        <p class="mt-3 text-gray-400">
+          PCB fabrication and PCBA coordination with quality validation.
+        </p>
       </div>
 
       <div>
-        <h3 class="text-xl font-semibold text-blue-400">Pre-Production Technical Review</h3>
-        <p class="mt-3 text-gray-400">Design validation and risk analysis before mass production.</p>
+        <h3 class="text-lg md:text-xl font-semibold text-blue-400">
+          Pre-Production Technical Review
+        </h3>
+        <p class="mt-3 text-gray-400">
+          Design validation and risk analysis before mass production.
+        </p>
       </div>
 
     </div>
-  </div>
-</section>
-
-<!-- HARDWARE -->
-<section id="hardware" class="py-24 border-t border-slate-800 bg-slate-950">
-  <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl font-bold mb-8">Industrial Hardware Modules</h2>
-    <p class="text-gray-400 max-w-3xl mb-10">
-      Engineering-grade modules designed for embedded integration and harsh environment deployment.
-    </p>
-    <ul class="space-y-4 text-gray-300">
-      <li>• Industrial Communication Modules (RS485 / CAN)</li>
-      <li>• Industrial IO Boards (24V Digital / Relay Output)</li>
-      <li>• Power & Protection Modules</li>
-    </ul>
-  </div>
-</section>
-
-<!-- COMPONENTS -->
-<section class="py-24 border-t border-slate-800">
-  <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl font-bold mb-6">Component Supply</h2>
-    <p class="text-gray-400 max-w-3xl mb-8">
-      Selected electronic components for prototyping and embedded development.
-      Full catalog available via our official marketplace stores.
-    </p>
-    <div class="space-x-4">
-      <a href="#" class="bg-slate-800 px-6 py-3 rounded-lg hover:bg-slate-700">Tokopedia</a>
-      <a href="#" class="bg-slate-800 px-6 py-3 rounded-lg hover:bg-slate-700">Shopee</a>
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="py-24 border-t border-slate-800 bg-slate-950">
-  <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl font-bold mb-6">About Voltika Labs</h2>
-    <p class="text-gray-400 max-w-3xl">
-      Voltika Labs is an engineering-driven technology lab focused on embedded systems and industrial electronics.
-      Founded by engineers with hands-on experience in mining and harsh industrial environments.
-    </p>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="py-24 border-t border-slate-800">
-  <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl font-bold mb-6">Contact</h2>
-    <p class="text-gray-400 mb-8">
-      For engineering inquiries and collaboration:
-    </p>
+<section id="contact" class="py-20 md:py-24 border-t border-slate-800">
+  <div class="max-w-6xl mx-auto px-4 md:px-6">
+    <h2 class="text-2xl md:text-3xl font-bold mb-6">Contact</h2>
 
-    <div class="space-y-4">
+    <div class="space-y-4 text-sm md:text-base">
 
-      <!-- Email -->
-      <div>
-        <a href="mailto:contact@voltikalabs.web.id?subject=Engineering Inquiry - Voltika Labs"
-           class="text-blue-400 hover:text-blue-300">
-           contact@voltikalabs.web.id
-        </a>
-      </div>
+      <a href="mailto:contact@voltikalabs.web.id?subject=Engineering Inquiry - Voltika Labs"
+         class="block text-blue-400 hover:text-blue-300">
+         contact@voltikalabs.web.id
+      </a>
 
-      <!-- WhatsApp -->
-      <div>
-        <a href="https://wa.me/628176477774?text=Hello%20Voltika%20Labs,%20I%20would%20like%20to%20discuss%20an%20engineering%20project."
-           class="text-green-400 hover:text-green-300">
-           WhatsApp: +62 817-6477-774
-        </a>
-      </div>
+      <a href="https://wa.me/628176477774?text=Hello%20Voltika%20Labs,%20I%20would%20like%20to%20discuss%20an%20engineering%20project."
+         class="block text-green-400 hover:text-green-300">
+         WhatsApp: +62 817-6477-774
+      </a>
 
     </div>
   </div>
 </section>
 
-
 <footer class="border-t border-slate-800 py-8 text-center text-gray-500 text-sm">
   © 2026 Voltika Labs. All rights reserved.
 </footer>
+
+<!-- Mobile Menu Script -->
+<script>
+  const btn = document.getElementById("menuBtn");
+  const menu = document.getElementById("mobileMenu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+</script>
 
 </body>
 </html>
