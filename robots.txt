@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://voltikalabs.web.id/sitemap.xml
