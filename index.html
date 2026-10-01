@@ -1,152 +1,192 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Voltika Labs | Industrial Embedded Engineering</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="Voltika Labs is an independent engineering initiative focused on embedded firmware, electronics, connected systems, and Qt applications." />
+  <meta name="theme-color" content="#07101d" />
+  <title>Voltika Labs | Practical Embedded &amp; Connected Systems</title>
+  <link rel="icon" href="assets/favicon.ico" />
+  <link rel="stylesheet" href="css/site.css" />
 </head>
 
-<body class="bg-slate-900 text-gray-200 font-sans">
+<body>
 
-<!-- NAVBAR -->
-<nav class="fixed w-full bg-slate-900/90 backdrop-blur border-b border-slate-800 z-50">
-  <div class="max-w-6xl mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
-    
-    <div class="text-lg md:text-xl font-bold text-blue-500">
-      Voltika Labs
+<header class="site-header">
+  <nav class="nav container" aria-label="Primary navigation">
+    <a class="brand" href="#top" aria-label="Voltika Labs home">
+      <span class="brand-mark" aria-hidden="true">VL</span>
+      <span>Voltika Labs</span>
+    </a>
+
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+
+    <div class="nav-links" id="nav-links">
+      <a href="#capabilities">Capabilities</a>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="hero-layout container">
+    <div>
+      <p class="eyebrow">Independent engineering initiative</p>
+      <h1>Practical engineering for embedded and connected systems.</h1>
+      <p class="hero-copy">Embedded firmware, electronics, connected infrastructure, and Qt applications—developed carefully, tested practically, and taken on selectively.</p>
+      <div class="actions">
+        <a class="button button-primary" href="https://wa.me/6287816545574?text=Hello%20Voltika%20Labs%2C%20I%20would%20like%20to%20discuss%20a%20technical%20project." target="_blank" rel="noopener noreferrer">Contact via WhatsApp</a>
+        <a class="button button-secondary" href="#capabilities">View capabilities</a>
+      </div>
     </div>
 
-    <!-- Desktop Menu -->
-    <div class="hidden md:flex space-x-6 text-sm">
-      <a href="#services" class="hover:text-blue-400">Services</a>
-      <a href="#hardware" class="hover:text-blue-400">Hardware</a>
-      <a href="#about" class="hover:text-blue-400">About</a>
-      <a href="#contact" class="hover:text-blue-400">Contact</a>
+    <aside class="hero-note" aria-label="Availability">
+      <strong>Limited availability</strong>
+      <p>Projects are accepted selectively, with preference for clear requirements, practical goals, and flexible timelines.</p>
+    </aside>
+  </div>
+</section>
+
+<section id="capabilities">
+  <div class="container">
+    <div class="section-heading">
+      <p class="section-kicker">Capabilities</p>
+      <div>
+        <h2>Focused technical work, with an honest scope.</h2>
+        <p class="section-intro">Each project begins with a practical discussion of requirements, constraints, and the result that needs to be achieved.</p>
+      </div>
     </div>
 
-    <!-- Mobile Menu Button -->
-    <button id="menuBtn" class="md:hidden text-gray-300 focus:outline-none">
-      ☰
-    </button>
-  </div>
+    <div class="capability-grid">
+      <article class="capability">
+        <span class="capability-number">01 / Firmware</span>
+        <h3>Embedded Systems &amp; Firmware</h3>
+        <p>Firmware development and integration for microcontroller-based systems, including sensors, device communication, control logic, and functional prototypes.</p>
+      </article>
 
-  <!-- Mobile Menu -->
-  <div id="mobileMenu" class="hidden md:hidden px-4 pb-4 space-y-3 text-sm">
-    <a href="#services" class="block hover:text-blue-400">Services</a>
-    <a href="#hardware" class="block hover:text-blue-400">Hardware</a>
-    <a href="#about" class="block hover:text-blue-400">About</a>
-    <a href="#contact" class="block hover:text-blue-400">Contact</a>
-  </div>
-</nav>
+      <article class="capability">
+        <span class="capability-number">02 / Electronics</span>
+        <h3>Electronics &amp; PCB Engineering</h3>
+        <p>Schematic capture and PCB design for single- and double-layer boards, including prototyping, layout review, and basic design validation.</p>
+      </article>
 
-<!-- HERO -->
-<section class="min-h-screen flex items-center pt-24">
-  <div class="max-w-6xl mx-auto px-4 md:px-6">
-    <h1 class="text-3xl md:text-6xl font-bold leading-tight">
-      Engineering Reliable 
-      <span class="text-blue-500">Embedded Systems</span> 
-      for Industry
-    </h1>
+      <article class="capability">
+        <span class="capability-number">03 / Connectivity</span>
+        <h3>IoT &amp; Connected Infrastructure</h3>
+        <p>Device connectivity, MQTT-based communication, API integration, and guidance in assembling practical connected systems. Infrastructure scope is discussed per project; managed cloud storage is not provided.</p>
+      </article>
 
-    <p class="mt-6 text-base md:text-lg text-gray-400 max-w-2xl">
-      Embedded firmware, industrial electronics, and field-ready hardware designed 
-      for harsh environments and real-world deployment.
-    </p>
-
-    <div class="mt-8 flex flex-col sm:flex-row gap-4">
-      <a href="#contact" 
-         class="bg-blue-600 px-6 py-3 rounded-lg hover:bg-blue-500 text-center">
-        Discuss Your Project
-      </a>
-
-      <a href="#services" 
-         class="border border-slate-700 px-6 py-3 rounded-lg hover:border-blue-500 text-center">
-        View Services
-      </a>
+      <article class="capability">
+        <span class="capability-number">04 / Applications</span>
+        <h3>Mobile &amp; Desktop Applications</h3>
+        <p>Cross-platform mobile and desktop applications built with Qt, QML, and C++, including operational tools, device interfaces, and API-connected applications.</p>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- SERVICES -->
-<section id="services" class="py-20 md:py-24 border-t border-slate-800">
-  <div class="max-w-6xl mx-auto px-4 md:px-6">
-    <h2 class="text-2xl md:text-3xl font-bold mb-12">Engineering Services</h2>
-
-    <div class="grid md:grid-cols-2 gap-10">
-
+<section id="work">
+  <div class="container">
+    <div class="section-heading">
+      <p class="section-kicker">Selected work</p>
       <div>
-        <h3 class="text-lg md:text-xl font-semibold text-blue-400">
-          Embedded Firmware Development
-        </h3>
-        <p class="mt-3 text-gray-400">
-          Microcontroller-based system design for industrial and IoT applications.
-        </p>
+        <h2>Projects built around real operational needs.</h2>
+        <p class="section-intro">A small selection of completed and ongoing work. Source code and internal implementation details are not published unless a project is explicitly open source.</p>
       </div>
+    </div>
 
-      <div>
-        <h3 class="text-lg md:text-xl font-semibold text-blue-400">
-          PCB & Electronics Design
-        </h3>
-        <p class="mt-3 text-gray-400">
-          Schematic and PCB layout engineered for manufacturability and reliability.
-        </p>
-      </div>
+    <div class="project-list">
+      <article class="project">
+        <span class="project-label">Production project</span>
+        <div>
+          <h3>J2Outdoor</h3>
+          <p>An Android application supporting outdoor-equipment rental operations, including inventory, customers, rental workflows, on-device text recognition, and backend API integration.</p>
+        </div>
+        <div class="tags" aria-label="J2Outdoor technologies">
+          <span class="tag">Qt</span><span class="tag">QML</span><span class="tag">C++</span><span class="tag">Android</span><span class="tag">REST API</span>
+        </div>
+      </article>
 
-      <div>
-        <h3 class="text-lg md:text-xl font-semibold text-blue-400">
-          Manufacturing Support
-        </h3>
-        <p class="mt-3 text-gray-400">
-          PCB fabrication and PCBA coordination with quality validation.
-        </p>
-      </div>
-
-      <div>
-        <h3 class="text-lg md:text-xl font-semibold text-blue-400">
-          Pre-Production Technical Review
-        </h3>
-        <p class="mt-3 text-gray-400">
-          Design validation and risk analysis before mass production.
-        </p>
-      </div>
-
+      <article class="project">
+        <span class="project-label">Personal project</span>
+        <div>
+          <h3>Water Monitoring System</h3>
+          <p>An experimental monitoring system combining sensors, embedded firmware, device communication, telemetry, and application interfaces.</p>
+        </div>
+        <div class="tags" aria-label="Water monitoring technologies">
+          <span class="tag">Sensors</span><span class="tag">Firmware</span><span class="tag">MQTT</span><span class="tag">Telemetry</span>
+        </div>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="py-20 md:py-24 border-t border-slate-800">
-  <div class="max-w-6xl mx-auto px-4 md:px-6">
-    <h2 class="text-2xl md:text-3xl font-bold mb-6">Contact</h2>
+<section id="about">
+  <div class="container about-grid">
+    <div>
+      <p class="section-kicker">About</p>
+      <h2>Built with curiosity, care, and practical limits.</h2>
+    </div>
 
-    <div class="space-y-4 text-sm md:text-base">
+    <div class="about-copy">
+      <p>Voltika Labs is an independent personal engineering initiative based in Indonesia. It began as a place to explore and build practical projects involving embedded systems, electronics, connected devices, and cross-platform applications.</p>
+      <p>This work is pursued alongside a full-time occupation. New projects are therefore accepted selectively and developed during available evenings, weekends, and holidays. Projects with flexible schedules, clear requirements, and practical goals are the best fit.</p>
+      <p>Modern development tools, including AI-assisted research and implementation, may be used where appropriate. Design decisions, integration, testing, and final verification remain subject to human review.</p>
 
-      <a href="mailto:contact@voltikalabs.web.id?subject=Engineering Inquiry - Voltika Labs"
-         class="block text-blue-400 hover:text-blue-300">
-         contact@voltikalabs.web.id
-      </a>
-
-      <a href="https://wa.me/628176477774?text=Hello%20Voltika%20Labs,%20I%20would%20like%20to%20discuss%20an%20engineering%20project."
-         class="block text-green-400 hover:text-green-300">
-         WhatsApp: +62 817-6477-774
-      </a>
-
+      <div class="principles" aria-label="Working principles">
+        <div class="principle">Clear scope before commitment</div>
+        <div class="principle">Practical testing over bold claims</div>
+        <div class="principle">Transparent constraints and timelines</div>
+        <div class="principle">Selective, focused project intake</div>
+      </div>
     </div>
   </div>
 </section>
 
-<footer class="border-t border-slate-800 py-8 text-center text-gray-500 text-sm">
-  © 2026 Voltika Labs. All rights reserved.
+<section id="contact">
+  <div class="container">
+    <div class="contact-panel">
+      <div>
+        <p class="section-kicker">Contact</p>
+        <h2>Have a practical technical project to discuss?</h2>
+        <p class="section-intro">Send a brief description of the problem, the expected result, and your preferred timeline.</p>
+      </div>
+
+      <div class="contact-links">
+        <a class="contact-link" href="https://wa.me/6287816545574?text=Hello%20Voltika%20Labs%2C%20I%20would%20like%20to%20discuss%20a%20technical%20project." target="_blank" rel="noopener noreferrer"><span>WhatsApp</span><strong>+62 878-1654-5574</strong></a>
+        <a class="contact-link" href="mailto:contact@voltikalabs.web.id?subject=Technical%20Project%20Inquiry"><span>Email</span><strong>contact@voltikalabs.web.id</strong></a>
+        <div class="contact-link"><span>Location</span><strong>Indonesia</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <span>© 2026 Voltika Labs.</span>
+    <span>Independent engineering initiative.</span>
+  </div>
 </footer>
 
-<!-- Mobile Menu Script -->
 <script>
-  const btn = document.getElementById("menuBtn");
-  const menu = document.getElementById("mobileMenu");
+  const menuButton = document.querySelector('.menu-button');
+  const navigation = document.querySelector('.nav-links');
 
-  btn.addEventListener("click", () => {
-    menu.classList.toggle("hidden");
+  menuButton.addEventListener('click', () => {
+    const isOpen = navigation.classList.toggle('open');
+    menuButton.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  navigation.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      navigation.classList.remove('open');
+      menuButton.setAttribute('aria-expanded', 'false');
+    });
   });
 </script>
 
